@@ -1,0 +1,21 @@
+.navbar{
+    transition: 1s;
+    background-color: #2C3E50;
+}
+
+.navbar.expand {
+padding-top: 2rem;
+padding-bottom: 2rem;
+
+}
+.navbar-brand {
+    color:white
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+}
+
+.basicColor{
+    background-color: #46BB9B;
+}

@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+@font-face{
+
+    font-family: "Bangers";   /*any name you want , note If the word consists of two syllables, it is placed in quotation marks*/
+    src:url(/GoogleFonts/Bangers/Bangers-Regular.ttf)
+ 
+ }
+ 
+ h1{           
+
+    font-family: "Bangers"; 
+
+ }

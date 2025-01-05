@@ -1,0 +1,38 @@
+
+
+
+<section class="mt-5 pt-5 pb-4">
+    <div class="container">
+    <div class="row gy-4 pb-5">
+        <app-header  [data]="'Product component'" [dark]="true"></app-header>
+    @for (item of productList; track $index) {
+        <div class="col-md-6  col-lg-4 col-xl-3 ">
+            <div class="card" >
+              <img [src]="item.imageCover" class="card-img-top w-100 rounded-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{item.title.slice(0,60)}}</h5>
+                <p class="card-text">{{item.description.slice(0,130)}}</p>
+                
+     
+<div class="row">
+@for(imgSrc of item.images; track $index ){
+<div class="col-md-3">
+    <img [src]="imgSrc" class="w-100" alt=""  />
+</div>
+}
+</div>
+              </div>
+            </div>
+
+ 
+        </div>
+    }
+    </div>
+
+    <h1 #recommendedH1>recommended-products</h1>
+@defer (on viewport(recommendedH1)) {    <app-recommended-products></app-recommended-products>
+}
+    </div>
+    </section>
+    
+

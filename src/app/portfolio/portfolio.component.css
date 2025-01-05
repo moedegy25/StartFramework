@@ -1,0 +1,63 @@
+.layer{
+
+
+    background-color: #1bbc9cbc;
+    opacity: 0;
+    transition: all 1s;
+}
+
+figure{
+    cursor: pointer;
+}
+
+figure:hover .layer {
+
+    opacity: 1;
+}
+
+i{
+
+font-size: 150px;
+color: white;
+}
+
+.photoModel{
+
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000000000;
+
+    background-color: rgba(127, 255, 212, 0.482);
+}
+
+i.fa-x{
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+i.fa-arrow-right{
+
+    top: 50%;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    
+
+}
+
+
+i.fa-arrow-left{
+
+    top: 50%;
+    left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    
+
+}
